@@ -74,4 +74,9 @@ public interface CustomerServcie {
 	@Consumes({"applcation/xml","application/json"})
 	public void update(@PathParam("id")String id,@PathParam("address")String address);
 	
+	@GET
+	@Path("/customer/queryAll2")
+	@Produces({"application/xml","application/json"})
+	@Consumes({"application/xml","application/json"})
+	public List<Customer> queryAll2();
 }

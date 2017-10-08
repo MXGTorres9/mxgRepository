@@ -47,4 +47,10 @@ public class CustomerServiceImpl implements CustomerServcie {
 		customerDao.update(id,address);
 	}
 
+	@Override
+	public List<Customer> queryAll2() {
+		
+		return customerDao.queryAll();
+	}
+
 }
